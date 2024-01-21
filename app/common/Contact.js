@@ -12,8 +12,8 @@ export default function ContactSection() {
         <h1 className="text-4xl font-bold mb-16 border-b-1 border-warning w-fit">
           Let's Connect
         </h1>
-        <ContactForm />
-        <Divider className="my-6" />
+        {/* <ContactForm />
+        <Divider className="my-6" /> */}
         <div className="flex justify-center items-center gap-4 sm:gap-8">
           {socialLinks.map((social, index) => (
             <Tooltip

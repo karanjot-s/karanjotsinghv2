@@ -54,6 +54,9 @@ body {
   .flare {
     opacity: 0 !important;
   }
+  html {
+    --cursor-color: transparent;
+  }
 }
 
 
