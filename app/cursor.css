@@ -1,0 +1,71 @@
+
+.flare {
+  position: fixed;
+  border: 2px solid #ffffff2b;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important ;
+  /* backdrop-filter: blur(1px); */
+  /* background-color: #0000005e; */
+  background-color: #bfbfbf;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  /* transition: 0.2s ease-in-out; */
+  cursor: none !important; /* Let's hide the default cursor so it looks way better */
+}
+
+.flare::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.2s ease-in-out;
+  width: 300%;
+  height: 300%;
+  transform: translate(-33%, -33%);
+  /* background-color: green; */
+  border-radius: 10000px;
+  border: 2px solid #bfbfbf;
+}
+
+body {
+  cursor: none;
+}
+
+@media screen and (max-width: 768px) {
+  .flare {
+    width: 0;
+    height: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+}
+
+.flare.pointer {
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.flare.text {
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+@media (hover: none) {
+  .flare {
+    opacity: 0 !important;
+  }
+}
+
+
+.flare.pointer::after {
+  opacity: 0;
+}
+
+.flare.text::after {
+  opacity: 0;
+}
+
+
+html {
+  --cursor-color: #bfbfbf;
+}

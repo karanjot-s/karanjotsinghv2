@@ -2,24 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::-moz-selection {
+  background: #f5a524;
+  color: white;
+}
+
+::selection {
+  background: #f5a524;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: rgb(37, 37, 37);
+/* outline: 1px solid slategrey; */
+}
+
+/* :root {
+  --bgcolor: 20, 41, 77
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 20, 41, 77;
+  --background-end-rgb: 20, 41, 77;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 20, 41, 77;
+    --background-end-rgb: 20, 41, 77;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
+      to bottom right,
       transparent,
       rgb(var(--background-end-rgb))
     )
@@ -30,4 +59,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
