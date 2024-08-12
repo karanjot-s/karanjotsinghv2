@@ -76,9 +76,11 @@ export default function Cursor() {
       innerStyle={{
         backgroundColor: "var(--cursor-color)",
         mixBlendMode: "exclusion",
+        zIndex: 99999,
       }}
       outerStyle={{
         border: "3px solid var(--cursor-color)",
+        zIndex: 99999,
       }}
       clickables={[
         "a",

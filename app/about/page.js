@@ -1,5 +1,5 @@
 import { Chip, Image, Link } from "@nextui-org/react";
-import Navbar from "../Navbar";
+import Navbar from "../common/Navbar";
 import WorkEx from "../common/WorkEx";
 import Edu from "./Edu";
 import ContactForm from "../ContactForm";
@@ -27,8 +27,6 @@ export default function About() {
 
   return (
     <>
-      <Navbar />
-
       <section className="px-4 py-20 md:py-40 max-w-[1024px] mx-auto flex flex-col-reverse md:flex-row gap-6 justify-center items-center">
         <div className="flex-1">
           <h1 className="text-4xl font-bold mb-6 border-b-1 w-fit border-warning">

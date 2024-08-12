@@ -33,6 +33,10 @@ body {
   cursor: none;
 }
 
+.Toastify__toast {
+  cursor: none;
+}
+
 @media screen and (max-width: 768px) {
   .flare {
     width: 0;

@@ -1,6 +1,6 @@
 import { Montserrat } from "next/font/google";
-import "./globals.css";
 import Provider from "./Provider";
+import Navbar from "./common/Navbar";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -14,7 +14,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Provider>
-          <main className="dark text-foreground bg-background">{children}</main>
+          <main className="dark text-foreground bg-background">
+            <Navbar />
+            {children}
+          </main>
         </Provider>
       </body>
     </html>

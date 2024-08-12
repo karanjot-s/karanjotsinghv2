@@ -8,19 +8,15 @@ import {
   Link,
   Textarea,
 } from "@nextui-org/react";
-import Navbar from "./Navbar";
 import styles from "./page.module.css";
-import WorkEx from "./common/WorkEx";
+import WorkEx from "../common/WorkEx";
 import Projects from "./Projects";
-import ContactForm from "./ContactForm";
-import { Icon } from "@iconify/react";
-import ContactSection from "./common/Contact";
+import ContactSection from "../common/Contact";
+import CustomButton from "../common/CustomButton";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-
       <main className="px-2">
         <section
           id="hero"
@@ -35,7 +31,7 @@ export default function Home() {
               A <strong>Software Developer</strong> currently pursuing B.Tech.
             </p>
             <div className="flex gap-4 mt-6">
-              <Button size="lg" color="warning" variant="shadow">
+              <Button size="lg" variant="solid" color="warning">
                 My Resume
               </Button>
               <Button size="lg" variant="faded">
