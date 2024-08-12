@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, Input, Spinner, Textarea } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
