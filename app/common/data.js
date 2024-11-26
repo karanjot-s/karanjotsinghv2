@@ -1,5 +1,14 @@
 export const homeProjects = [
   {
+    title: "SoMe",
+    desc: "Social media platform reminiscent of Instagram, employing NextJs, ExpressJS (Node), MongoDB, and Web Sockets to enable real-time interactions and provide users with an interactive experience",
+    image: "/projects/someimg.png",
+    links: [
+      { name: "Preview", link: "https://some-seven.vercel.app/" },
+      { name: "Code", link: "https://github.com/karanjot-s/some" },
+    ],
+  },
+  {
     title: "KS Drive",
     desc: "A comprehensive Google Drive Clone utilizing React JS, Firebase, and Bootstrap technologies, complete with user authentication and a structured file management system.",
     image: "/projects/ksdrive.png",
@@ -17,15 +26,19 @@ export const homeProjects = [
       { name: "Code", link: "https://github.com/karanjot-s/AiFlix" },
     ],
   },
+];
+
+export const allProjects = [
   {
     title: "SoME",
     desc: "Social media platform reminiscent of Instagram, employing NextJs, ExpressJS (Node), MongoDB, and Web Sockets to enable real-time interactions and provide users with an interactive experience",
     image: "/projects/someimg.png",
-    links: [{ name: "Code", link: "https://github.com/karanjot-s/some" }],
+    tags: ["MERN Stack", "Socket.io"],
+    links: [
+      { name: "Preview", link: "https://some-seven.vercel.app/" },
+      { name: "Code", link: "https://github.com/karanjot-s/some" },
+    ],
   },
-];
-
-export const allProjects = [
   {
     title: "KS Drive",
     desc: "A comprehensive Google Drive Clone utilizing React JS, Firebase, and Bootstrap technologies, complete with user authentication and a structured file management system.",
@@ -44,16 +57,6 @@ export const allProjects = [
     links: [
       { name: "Preview", link: "https://ai-flix-zeta.vercel.app/" },
       { name: "Code", link: "https://github.com/karanjot-s/AiFlix" },
-    ],
-  },
-  {
-    title: "SoME",
-    desc: "Social media platform reminiscent of Instagram, employing NextJs, ExpressJS (Node), MongoDB, and Web Sockets to enable real-time interactions and provide users with an interactive experience",
-    image: "/projects/someimg.png",
-    tags: ["MERN Stack", "Socket.io"],
-    links: [
-      { name: "Preview", link: "#" },
-      { name: "Code", link: "https://github.com/karanjot-s/some" },
     ],
   },
   {
@@ -107,6 +110,12 @@ export const socialLinks = [
 ];
 
 export const workEx = [
+  {
+    title: "SDE Intern",
+    company: "Somhako (AdvantF Group KK)",
+    duration: "April 2024 - Aug 2024",
+    desc: "Worked on Next JS for frontend, Django for backend and PostgreSQL for database. Contributed in creating SAAS ATS application for the company. Also worked on the Azure DevOps and Github Workflows for CI/CD pipeline.",
+  },
   {
     title: "Full Stack Developer",
     company: "VyaLinks",
